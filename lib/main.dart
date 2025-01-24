@@ -1,21 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_work/HomePage.dart';
 
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
   @override
   Widget build(BuildContext context) {
+    int days = 30;
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Center(
-        child: Container(
-          child: Text("Welcome to Flutter"),
-        ),
-      ),
+   home: Homepage(),
     );
   }
 }
